@@ -1,0 +1,13 @@
+node_modules
+.ui-preview/
+
+backend/node_modules
+client/node_modules
+backend/.env
+*.rar
+
+Anh_Do_Chay/
+backend/uploads/
+client/public/design-ref/
+*.docx
+*.rar

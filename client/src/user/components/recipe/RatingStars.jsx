@@ -1,0 +1,30 @@
+import React from "react";
+import { FaStar } from "react-icons/fa";
+
+export default function RatingStars({ value = 0, count = 0 }) {
+  const full = Math.round(value * 10) / 10;
+  const stars = Array.from({ length: 5 }).map((_, i) => {
+    const active = i + 1 <= Math.round(full);
+    return (
+      <span
+        key={i}
+        className={`text-lg ${
+          active ? "text-amber-400" : "text-black/15"
+        }`}
+        aria-hidden="true"
+      >
+        <FaStar />
+      </span>
+    );
+  });
+  return (
+    <div
+      className="flex items-center gap-1"
+      aria-label={`Đánh giá trung bình ${full} trên 5 với ${count} lượt`}
+    >
+      {stars}
+      <span className="text-sm font-medium text-hub-ink">{full}</span>
+      <span className="text-xs text-hub-muted">({count})</span>
+    </div>
+  );
+}

@@ -1,0 +1,65 @@
+ĐẠI HỌC CÔNG NGHIỆP VIỆT - HUNG
+CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do – Hạnh phúc
+KHOA CÔNG NGHỆ THÔNG TIN
+ĐỀ CƯƠNG ĐỀ TÀI
+ĐỒ ÁN TỐT NGHIỆP ĐẠI HỌC
+Họ và tên sinh viên :
+Lớp                          :
+Khoá                        :
+Ngành đào tạo        : Công nghệ thông tin
+Chuyên ngành        : Công nghệ thông tin
+Hệ đào tạo              : Đại học chính quy
+1/ Tên đồ án tốt nghiệp:
+Xây dựng website chia sẻ công thức nấu ăn chay (Culinary Hub)
+2/ Lý do chọn đề tài:
+2.1. Xu hướng ăn chay và chia sẻ công thức trực tuyến ngày càng phổ biến, nhu cầu nền tảng tập trung, dễ tra cứu và tương tác cộng đồng.
+2.2. Các website hiện có thiếu tính năng quản lý tập trung, kiểm duyệt nội dung và hỗ trợ người dùng đăng tải công thức có cấu trúc.
+2.3. Đề tài giúp rèn luyện kỹ năng phát triển web full-stack (React, Node.js, MongoDB) theo quy trình phân tích, thiết kế và triển khai hệ thống thực tế.
+2.4. Ứng dụng phù hợp với chuyên ngành CNTT, có tính thực tiễn và khả năng mở rộng trong tương lai.
+3/ Nội dung, nhiệm vụ nghiên cứu:
+Nội dung báo cáo đồ án gồm 4 chương như sau:
+CHƯƠNG 1: TỔNG QUAN ĐỀ TÀI
+1.1. Đặt vấn đề: Nhu cầu chia sẻ, tìm kiếm công thức nấu ăn chay; thiếu nền tảng quản lý và tương tác cộng đồng hiệu quả.
+1.2. Mục tiêu và phạm vi: Xây dựng website chia sẻ công thức chay; quản lý người dùng, cộng đồng và hệ thống admin.
+1.3. Đối tượng sử dụng: Guest (xem, tìm kiếm), User (đăng công thức, bình luận, yêu thích), Admin (duyệt nội dung, xử lý báo cáo, thống kê).
+1.4. Phương pháp nghiên cứu: Khảo sát yêu cầu, phân tích hệ thống, thiết kế và triển khai website thử nghiệm.
+1.5. Cấu trúc báo cáo: Giới thiệu 4 chương chính và kết luận.
+CHƯƠNG 2: CƠ SỞ LÝ THUYẾT VÀ CÔNG NGHỆ SỬ DỤNG
+2.1. Kiến trúc web: Mô hình client-server, RESTful API, kiến trúc 3 tầng (Presentation – Business – Data).
+2.2. Công nghệ frontend: React 19, Vite, Tailwind CSS, React Router, Axios.
+2.3. Công nghệ backend: Node.js, Express.js, Mongoose, JWT, Multer, Sharp (xử lý ảnh/video).
+2.4. Cơ sở dữ liệu: MongoDB — lưu trữ User, Recipe, Comment, Post, Report, Media, Taxonomy, Settings.
+2.5. Bảo mật: Mã hóa mật khẩu (bcrypt), xác thực JWT, CORS, phân quyền theo vai trò (user/admin).
+CHƯƠNG 3: PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG
+3.1. Phân tích yêu cầu chức năng User: đăng ký/đăng nhập, tạo/sửa công thức, tìm kiếm/lọc, bình luận/đánh giá, yêu thích, đăng bài cộng đồng.
+3.2. Phân tích yêu cầu chức năng Admin: quản lý user, duyệt công thức, quản lý bài viết/báo cáo, thư viện media, cài đặt hệ thống, dashboard thống kê.
+3.3. Phân tích yêu cầu phi chức năng: Hiệu năng, bảo mật, khả năng mở rộng, giao diện thân thiện.
+3.4. Biểu đồ use case: Mô tả tác nhân Guest, User, Admin và các use case chính.
+3.5. Thiết kế cơ sở dữ liệu: Sơ đồ MongoDB (User, Recipe, Comment, Post, Report, Media, Taxonomy, ViewLog, AuditLog, Settings).
+3.6. Thiết kế API: Nhóm endpoint /api/auth, /api/recipes, /api/posts, /api/admin, /api/reports, /api/upload, /api/settings.
+3.7. Thiết kế giao diện: Trang chủ, danh sách/chi tiết công thức, tìm kiếm, cộng đồng, profile, submit công thức; khu vực admin riêng biệt.
+CHƯƠNG 4: TRIỂN KHAI HỆ THỐNG
+4.1. Môi trường triển khai: Node.js, MongoDB; cấu hình .env (DB, JWT, upload).
+4.2. Triển khai backend: Cấu trúc MVC + Repository; models Mongoose; xử lý upload và media (ảnh/video).
+4.3. Triển khai frontend: AppUser (người dùng), AppAdmin (quản trị); routing, gọi API, quản lý trạng thái đăng nhập.
+4.4. Luồng đăng công thức: User điền form → upload media → backend lưu MongoDB → admin duyệt → hiển thị công khai.
+4.5. Kiểm thử: Unit test API (Mocha, Chai, Supertest); kiểm thử chức năng trên trình duyệt.
+Kết luận:
+5.1. Kết quả dự kiến đạt được: Website hoàn chỉnh cho chia sẻ công thức nấu ăn chay với giao diện thân thiện, responsive.
+5.2. Kết quả dự kiến đạt được: Hệ thống quản trị duyệt công thức, quản lý user, báo cáo vi phạm, thống kê.
+5.3. Kết quả dự kiến đạt được: Cộng đồng bình luận, đánh giá, yêu thích, bài viết cộng đồng.
+5.4. Hạn chế: Một số tính năng nâng cao (gợi ý công thức, thông báo real-time) chưa triển khai.
+5.5. Hạn chế: Hệ thống chưa tối ưu cho quy mô người dùng lớn.
+5.6. Một vài giao diện được thiết kế bắt mắt theo design reference, tối ưu trải nghiệm người dùng trên desktop và mobile.
+4/ Tài liệu, dữ liệu tham khảo dự kiến:
+6.1. Tiếng Việt: Giáo trình Phân tích thiết kế hệ thống thông tin — ĐH Công nghiệp Việt-Hung.
+6.2. Tiếng Việt: Tài liệu hướng dẫn React, Node.js, MongoDB (nodejs.org, react.dev, mongodb.com/docs).
+6.3. Internet: https://react.dev — Tài liệu React chính thức.
+6.4. Internet: https://expressjs.com — Tài liệu Express.js.
+6.5. Internet: https://tailwindcss.com/docs — Tailwind CSS.
+6.6. Internet: https://mongoosejs.com/docs — Tài liệu Mongoose.
+6/Ngày giao đề tài:    …… /…./..…...
+7/Ngày nộp quyển :   …… /…./....….
+Hà Nội, ngày ...... tháng ...... năm .........
+TRƯỞNG KHOA	GIÁO VIÊN HƯỚNG DẪN	SINH VIÊN
